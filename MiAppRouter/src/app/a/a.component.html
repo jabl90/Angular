@@ -1,0 +1,9 @@
+<p>
+  {{usuarios|json}} <!--necesitamos stringyficarlo con json porque es un objeto-->
+</p>
+
+<section>
+  <ul *ngFor="let aUser of usuarios">
+  <li>{{aUser.uid}} - {{aUser.nombre}}</li>
+  </ul>
+</section>

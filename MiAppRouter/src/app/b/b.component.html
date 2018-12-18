@@ -1,0 +1,9 @@
+<p>
+    {{pedidos|json}} <!--necesitamos stringyficarlo con json porque es un objeto-->
+  </p>
+  
+  <section>
+    <ul *ngFor="let bPedidos of pedidos">
+    <li>{{bPedidos.pid}} - {{bPedidos.descripcion}} - {{bPedidos.monto}}</li>
+    </ul>
+  </section>
